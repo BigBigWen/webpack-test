@@ -91,6 +91,10 @@ module.exports = {
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader?importantLoader=1!postcss-loader'
+      },
+      {
+        test: /\.less$/,
+        loader: 'style!css!postcss!less'
 
       }
     ]
